@@ -46,6 +46,3 @@ nosetests.xml
 # Rope
 .ropeproject
 
-# Project
-data
-output
