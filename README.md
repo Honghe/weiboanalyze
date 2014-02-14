@@ -7,3 +7,6 @@
 
 ## Credits
 * sina weibo Python SDK [michaelliao / sinaweibopy](https://github.com/michaelliao/sinaweibopy)
+
+## License
+Apache License version 2

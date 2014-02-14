@@ -63,6 +63,7 @@ def load_tokens(filename=TOKEN_FILE):
         f.close()
     return access_token_list
 
+# TODO duplicated access_token dump
 def dump_tokens(access_token, filename=TOKEN_FILE):
     filepath = os.path.join(os.path.dirname(__file__), filename)
     if not os.path.exists(filepath):
@@ -103,7 +104,7 @@ def get_client(app_key, app_secret, redirect_uri):
     client.set_access_token(access_token, expires_in)  
     client.set_uid(r.uid)  
     return client  
-    
+
 ##################################################################
 # # 在网站放置“使用微博账号登录”的链接，当用户点击链接后，引导用户跳转至如下地址：
 # client = weibo.APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
